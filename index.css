@@ -1,3 +1,13 @@
+body {
+    margin: 0;
+    background-color: #eaeaea;
+    display: flex;
+    height: 100vh;
+    /* place-items: center; */
+    font-family: "Source Sans Pro", sans-serif;
+    align-items: flex-start;
+    justify-content: center;
+}
 .list {
   max-width: 90%;
   maring-left: 5%;
