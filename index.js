@@ -14,6 +14,10 @@ const contentList = [
         name: 'Product Application Software Code Review Procedure - P41340',
         value: ''
       },
+      {
+        name: 'Software Coding Standards - DD002856',
+        value: ''
+      },
       
 
     ]
@@ -29,10 +33,35 @@ const contentList = [
   },
 ]
   
-function start () {
+async function start () {
+
+  const req = await fetch('data.json')
+  const data = await req.json()
   const wrapper = document.querySelector('.wrapper')
+  /*const sections = data.map(section => section.section)
+  const selector = document.querySelector('#sections')
+  selector.innerHTML = sections.map(sectionString => `<option value=${sectionString.replace(/\s/g, '').toLowerCase()}>${sectionString}</option>`).join('')
+
+const submitBtn = document.querySelector('#submit')
+  submitBtn.addEventListener('click', () => {
+    const sectionSelected = document.querySelector('#sections')?.value
+    const name = document.querySelector('#name')?.value
+    const value = document.querySelector('#value')?.value
+    if (name && value) {
+        const target = data.filter(section => section.section.replace(/\s/g, '').toLowerCase() === sectionSelected).pop()
+        console.log(target)
+        target.items.push({
+        name: name,
+        value: value
+      })
+
+      
+    } else {
+      alert('no empty fields wierdo')
+    }
+  })*/
   
-  contentList.forEach(article => {
+  data.forEach(article => {
     const articleNode = document.createElement('article')
     articleNode.className = 'list'
     const headerNode = document.createElement('header')
