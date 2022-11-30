@@ -6,6 +6,16 @@ const contentList = [
         name: 'Design Verification and validation procedure - P40372',
         value: 'https://app.bom.com/items/detail-spec?item_id=1268290345&version_id=11975094278'
       },
+      {
+        name: 'Software Development - QSP045',
+        value: ''
+      },
+      {
+        name: 'Product Application Software Code Review Procedure - P41340',
+        value: ''
+      },
+      
+
     ]
   },
   {
