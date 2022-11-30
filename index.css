@@ -1,5 +1,6 @@
 .list {
-  max-width: 490px;
+  max-width: 90%;
+  maring-left: 5%;
   width: 100%;
   border-radius: 12px;
 }
